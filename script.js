@@ -1,3 +1,4 @@
+// Mostra o layout do Spotify após clicar em entrar
 function entrar() {
   document.getElementById("intro").style.display = "none";
   document.getElementById("spotify").classList.remove("hidden");
@@ -76,9 +77,16 @@ const audio = document.getElementById("audio");
 playBtn.addEventListener("click", () => {
   if (audio.paused) {
     audio.play();
-    playBtn.innerText = "⏸";
+    playBtn.innerHTML = '<i data-lucide="pause"></i>';
   } else {
     audio.pause();
-    playBtn.innerText = "▶";
+    playBtn.innerHTML = '<i data-lucide="play"></i>';
   }
+  // Atualiza os ícones do Lucide
+  window.lucide.createIcons();
+});
+
+// Inicializa os ícones Lucide
+window.addEventListener('load', () => {
+  window.lucide.createIcons();
 });
