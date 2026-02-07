@@ -113,14 +113,24 @@ body {
 .control-btn {
   background: none;
   border: none;
-  color: #fff;
-  font-size: 20px;
   cursor: pointer;
+  padding: 8px;
 }
 
-.play-main {
-  font-size: 28px;
-  color: #1db954;
+.control-btn i {
+  width: 28px;
+  height: 28px;
+  stroke: white;
+}
+
+.play-main i {
+  width: 36px;
+  height: 36px;
+  stroke: #1db954;
+}
+
+.control-btn:hover i {
+  stroke: #1db954;
 }
 
 /* LYRICS BOX */
