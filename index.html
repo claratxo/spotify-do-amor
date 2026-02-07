@@ -5,6 +5,8 @@
   <title>Você é o amor da minha vida ❤</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <!-- Biblioteca de ícones Lucide -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/lucide@0.257.0/dist/lucide.min.js"></script>
 </head>
 <body>
 
@@ -40,11 +42,11 @@
 
     <!-- BOTÕES ESTILO SPOTIFY -->
     <div class="controls">
-      <button class="control-btn">❖</button> <!-- Aleatório -->
-      <button class="control-btn">⏮</button> <!-- Anterior -->
-      <button class="control-btn play-main" id="play-music">▶</button> <!-- Play/Pause -->
-      <button class="control-btn">⏭</button> <!-- Próximo -->
-      <button class="control-btn">🔁</button> <!-- Repetir -->
+      <button class="control-btn" id="shuffle"><i data-lucide="shuffle"></i></button>
+      <button class="control-btn" id="previous"><i data-lucide="skip-back"></i></button>
+      <button class="control-btn play-main" id="play-music"><i data-lucide="play"></i></button>
+      <button class="control-btn" id="next"><i data-lucide="skip-forward"></i></button>
+      <button class="control-btn" id="repeat"><i data-lucide="repeat"></i></button>
     </div>
 
     <!-- AUDIO INVISÍVEL -->
@@ -72,10 +74,4 @@
       <div><span id="minutos"></span><small>Minutos</small></div>
       <div><span id="segundos"></span><small>Segundos</small></div>
     </div>
-  </div>
-
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
+  <
