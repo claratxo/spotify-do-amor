@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Você é o amor da minha vida ❤</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- INTRO -->
+<div id="intro" class="intro">
+  <div class="wrapped">
+    <h1>2025</h1>
+    <p>Meu Spotify Wrapped foi você ❤</p>
+    <button class="play-btn" onclick="entrar()">▶</button>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="spotify" class="spotify hidden">
+
+  <!-- PLAYER CARD estilo Spotify -->
+  <div class="player-card">
+    <img src="foto.jpeg" class="cover">
+
+    <div class="music-info">
+      <h2>About You</h2>
+      <p>The 1975</p>
+    </div>
+
+    <!-- BARRA FAKE -->
+    <div class="progress">
+      <span id="current">0:00</span>
+      <div class="bar">
+        <div class="fill" id="fill"></div>
+      </div>
+      <span>5:26</span>
+    </div>
+
+    <!-- BOTÕES ESTILO SPOTIFY -->
+    <div class="controls">
+      <button class="control-btn">❖</button> <!-- Aleatório -->
+      <button class="control-btn">⏮</button> <!-- Anterior -->
+      <button class="control-btn play-main" id="play-music">▶</button> <!-- Play -->
+      <button class="control-btn">⏭</button> <!-- Próximo -->
+      <button class="control-btn">🔁</button> <!-- Repetir -->
+    </div>
+  </div>
+
+  <!-- LYRICS BOX -->
+  <div class="lyrics-box">
+    <p>
+      Obrigada por ser meu melhor amigo<br>
+      Meu companheiro<br>
+      Meu lugar de paz<br>
+      Eu te amo
+    </p>
+  </div>
+
+  <!-- TEMPO -->
+  <div class="time-card">
+    <p class="since">Juntos desde:</p>
+    <div class="grid">
+      <div><span id="anos"></span><small>Anos</small></div>
+      <div><span id="meses"></span><small>Meses</small></div>
+      <div><span id="dias"></span><small>Dias</small></div>
+      <div><span id="horas"></span><small>Horas</small></div>
+      <div><span id="minutos"></span><small>Minutos</small></div>
+      <div><span id="segundos"></span><small>Segundos</small></div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
