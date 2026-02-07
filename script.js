@@ -1,4 +1,4 @@
-// Mostra o layout do Spotify após clicar em entrar
+// Mantém página inicial intacta
 function entrar() {
   document.getElementById("intro").style.display = "none";
   document.getElementById("spotify").classList.remove("hidden");
@@ -82,7 +82,6 @@ playBtn.addEventListener("click", () => {
     audio.pause();
     playBtn.innerHTML = '<i data-lucide="play"></i>';
   }
-  // Atualiza os ícones do Lucide
   window.lucide.createIcons();
 });
 
