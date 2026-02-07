@@ -69,8 +69,16 @@ setInterval(() => {
   if (fill) fill.style.width = progress + "%";
 }, 1000);
 
-/* BOTÃO DE PLAY ABRINDO SPOTIFY */
+/* BOTÃO DE PLAY/PAUSE COM AUDIO */
 const playBtn = document.getElementById("play-music");
+const audio = document.getElementById("audio");
+
 playBtn.addEventListener("click", () => {
-  window.open("https://open.spotify.com/track/1fDFHXcykq4iw8Gg7s5hG9", "_blank");
+  if (audio.paused) {
+    audio.play();
+    playBtn.innerText = "⏸";
+  } else {
+    audio.pause();
+    playBtn.innerText = "▶";
+  }
 });
